@@ -10,21 +10,12 @@ repositories {
 }
 
 jar {
-    archiveBaseName.set('ClientTCP')
+    archiveBaseName.set('CTCP')
     archiveClassifier.set('')
     archiveVersion.set('')
     manifest {
         attributes(
-                'Main-Class': 'Client'
+                'Main-Class': 'Main'
         )
     }
-}
-
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-}
-
-test {
-    useJUnitPlatform()
 }
