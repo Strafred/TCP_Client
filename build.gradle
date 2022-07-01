@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    archiveBaseName.set('CTCP')
+    archiveClassifier.set('')
+    archiveVersion.set('')
+    manifest {
+        attributes(
+                'Main-Class': 'Main'
+        )
+    }
+}
